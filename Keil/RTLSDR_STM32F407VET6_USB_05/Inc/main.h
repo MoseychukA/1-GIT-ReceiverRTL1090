@@ -58,13 +58,13 @@ typedef enum
 
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */
-#define USB_PIPE_NUMBER 0x81
-#define KILOBYTES 1024
-#define RAW_BUFFER_BYTES (25*KILOBYTES)
-#define SIZEOF_DEMOD_BUF_EL 2
-#define DEMOD_BUFF_BYTES (RAW_BUFFER_BYTES/SIZEOF_DEMOD_BUF_EL)
-#define DOWNSAMPLE 15
-#define RTL_SAMPLERATE 240000
+#define USB_PIPE_NUMBER 0x81                   //
+#define KILOBYTES 1024                         //
+#define RAW_BUFFER_BYTES (25*KILOBYTES)        //
+#define SIZEOF_DEMOD_BUF_EL 2                  //
+#define DEMOD_BUFF_BYTES (RAW_BUFFER_BYTES/SIZEOF_DEMOD_BUF_EL) //
+#define DOWNSAMPLE 15                          //
+#define RTL_SAMPLERATE 240000                  //
 /* USER CODE END EC */
 
 /* Exported macro ------------------------------------------------------------*/

@@ -116,8 +116,6 @@ static void USBH_UserProcess  (USBH_HandleTypeDef *phost, uint8_t id)
 {
   /* USER CODE BEGIN CALL_BACK_1 */
 	
-	
-	
 	  if (id != id_prev) 
 		{
     switch(id) { 
@@ -131,7 +129,7 @@ static void USBH_UserProcess  (USBH_HandleTypeDef *phost, uint8_t id)
       break;
 
     case HOST_USER_CLASS_SELECTED:
-      USBH_UsrLog("****HOST_USER_CLASS_SELECTED А что дальше?");
+      USBH_UsrLog("****HOST_USER_CLASS_SELECTED");
       break;
       
     case HOST_USER_CONNECTION:
@@ -148,7 +146,7 @@ static void USBH_UserProcess  (USBH_HandleTypeDef *phost, uint8_t id)
 
     default:
     USBH_UsrLog("Unknown USBH User State: %d", id);
-      break; 
+      break;  
     }
   }
   id_prev = id;

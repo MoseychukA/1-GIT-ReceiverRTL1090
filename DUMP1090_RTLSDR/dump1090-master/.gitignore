@@ -1,0 +1,11 @@
+*.o
+dump1090
+testfiles/*.bin
+misc
+frames.js
+.*.swp
+*~
+*.rej
+*.orig
+untrackedDeveloperSettings.js
+/dump1090-win.1.10.3010.14.zip

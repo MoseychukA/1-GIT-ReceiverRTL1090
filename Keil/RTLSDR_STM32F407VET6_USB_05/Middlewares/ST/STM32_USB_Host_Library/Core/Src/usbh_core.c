@@ -846,6 +846,7 @@ USBH_StatusTypeDef  USBH_Process(USBH_HandleTypeDef *phost)
 /**
   * @brief  USBH_HandleEnum
   *         This function includes the complete enumeration process
+            Эта функция включает в себя полный процесс перечисления.
   * @param  phost: Host Handle
   * @retval USBH_Status
   */
@@ -856,6 +857,8 @@ static USBH_StatusTypeDef USBH_HandleEnum(USBH_HandleTypeDef *phost)
 
   switch (phost->EnumState)
   {
+		USBH_UsrLog("phost->EnumState: %xh", phost->EnumState);
+		
     case ENUM_IDLE:
       /* Get Device Desc for only 1st 8 bytes : To get EP0 MaxPacketSize */
       ReqStatus = USBH_Get_DevDesc(phost, 8U);

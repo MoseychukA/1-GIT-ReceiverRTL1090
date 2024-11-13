@@ -27,8 +27,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "XPT2046_touch.h"
-#include "ili9341.h"
+#include "XPT2046_touch.h"   // Тачскрин дисплея
+#include "ili9341.h"         // Настройки дисплея
 
 
 /* USER CODE END Includes */
@@ -36,41 +36,41 @@
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 
-GPIO_TypeDef* GPIO_PORT[LEDn] = {LED1_GREEN_GPIO_Port, 
+GPIO_TypeDef* GPIO_PORT[LEDn] = {LED1_GREEN_GPIO_Port,           // Светодиоды на плате
                                  LED2_RED_GPIO_Port};
 
 const uint16_t GPIO_PIN[LEDn] = {LED1_GREEN_Pin, 
 	                               LED2_RED_Pin};
 
-void BSP_LED_On(Led_TypeDef Led)
+void BSP_LED_On(Led_TypeDef Led)                                  // Включить светодиод
 {
   HAL_GPIO_WritePin(GPIO_PORT[Led], GPIO_PIN[Led], GPIO_PIN_RESET); 
 }
 
-void BSP_LED_Off(Led_TypeDef Led)
+void BSP_LED_Off(Led_TypeDef Led)                                 // Выключить светодиод                                
 {
   HAL_GPIO_WritePin(GPIO_PORT[Led], GPIO_PIN[Led], GPIO_PIN_SET); 
 }
 			
-void BSP_LED_Toggle(Led_TypeDef Led)
+void BSP_LED_Toggle(Led_TypeDef Led)                              // Переключить светодиод
 {
   HAL_GPIO_TogglePin(GPIO_PORT[Led], GPIO_PIN[Led]);
 }
 					
-GPIO_TypeDef* BUTTON_PORT[BUTTONn] = {BUTTON_WK_AP_GPIO_Port, 
+GPIO_TypeDef* BUTTON_PORT[BUTTONn] = {BUTTON_WK_AP_GPIO_Port,     // Кнопки на плате   
                                       BUTTON_K0_GPIO_Port,
                                       BUTTON_K1_GPIO_Port}; 
 
-const uint16_t BUTTON_PIN[BUTTONn] = {BUTTON_WK_AP_Pin, 
+const uint16_t BUTTON_PIN[BUTTONn] = {BUTTON_WK_AP_Pin,           // Кнопки на плате   
                                       BUTTON_K0_Pin,
                                       BUTTON_K1_Pin}; 
 
-const uint16_t BUTTON_IRQn[BUTTONn] = {BUTTON_WK_AP_EXTI_IRQn, 
+const uint16_t BUTTON_IRQn[BUTTONn] = {BUTTON_WK_AP_EXTI_IRQn,    // Кнопки на плате   
                                        BUTTON_K0_EXTI_IRQn,
                                        BUTTON_K1_EXTI_IRQn};
 
 
-uint32_t BSP_PB_GetState(Button_TypeDef Button)
+uint32_t BSP_PB_GetState(Button_TypeDef Button)                   // Получить соотояние кнопки на плате   
 {
   return HAL_GPIO_ReadPin(BUTTON_PORT[Button], BUTTON_PIN[Button]);
 }
@@ -89,13 +89,13 @@ uint32_t BSP_PB_GetState(Button_TypeDef Button)
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-SPI_HandleTypeDef hspi2;
+SPI_HandleTypeDef hspi2;                                      // Подключить SPI
 
-TIM_HandleTypeDef htim3;
+TIM_HandleTypeDef htim3;                                      // Подключить 3 таймер
 
-UART_HandleTypeDef huart1;
+UART_HandleTypeDef huart1;                                    // Подключить 1 UART
 
-SRAM_HandleTypeDef hsram1;
+SRAM_HandleTypeDef hsram1;                                    // Подключить внешнюю память
 
 /* USER CODE BEGIN PV */
 	#ifdef __GNUC__
@@ -103,12 +103,15 @@ SRAM_HandleTypeDef hsram1;
      set to 'Yes') calls __io_putchar() */
   #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
 #else
-  #define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
+#define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)         // Вывод ткстов порт UART
 #endif /* __GNUC__ */
 	
-	
+USBH_HandleTypeDef hUSBHost;
+
+uint8_t currentScreen = 0;
+
 //static void USBH_UserProcess(USBH_HandleTypeDef *phost, uint8_t id);
-static void RTLSDR_InitApplication(void);
+static void Device_InitApplication(void);                    // Инициализация  устройств на плате 
 	
 /* USER CODE END PV */
 
@@ -120,6 +123,7 @@ static void MX_FSMC_Init(void);
 static void MX_SPI2_Init(void);
 static void MX_TIM3_Init(void);
 void MX_USB_HOST_Process(void);
+
 
 /* USER CODE BEGIN PFP */
 
@@ -144,8 +148,6 @@ volatile int16_t* curr_demod_buff;
 
 uint8_t usb_device_ready;
 uint8_t OutPipe, InPipe;
-
-
 
 
 /* USER CODE END PFP */
@@ -195,10 +197,21 @@ int main(void)
 	printf("Start system\r\n");
 
 	 /* Init RTLSDR Application */
-  RTLSDR_InitApplication();    // 
+  Device_InitApplication();    // 
 	
 	printf("Start system END\r\n");
 	
+//	/* Init Host Library */
+//	USBH_Init(&hUSBHost, USBH_UserProcess, 0);
+
+//	/* Add Supported Class */
+//	USBH_RegisterClass(&hUSBHost, USBH_RTLSDR_CLASS);
+
+//	/* Start Host Process */
+//	USBH_Start(&hUSBHost);
+
+//	RTLSDR_HandleTypeDef *RTLSDR_Handle = (RTLSDR_HandleTypeDef*) hUSBHost.pActiveClass->pData;
+
 	
   /* USER CODE END 2 */
 
@@ -213,10 +226,8 @@ int main(void)
 			
 		if (hUsbHostFS.gState == HOST_CHECK_CLASS&& !usb_device_ready) 
 		{
-				// attempt a connection on the control endpoint
-				// note: max packet size 64 bytes for FS and 512 bytes for HS
 			  // попытка подключения к конечной точке управления
-        // примечание: максимальный размер пакета 64 байта для FS и 512 байт для HS
+        // примечание: максимальный размер пакета 64 байта для FS и 512 байт для FS
 			  /* Выделить новую трубу
          * @param phost: дескриптор хоста
          * @param ep_addr: конечная точка, для которой будет выделен канал.
@@ -235,6 +246,13 @@ int main(void)
 																		hUsbHostFS.device.speed,
 																		USB_EP_TYPE_BULK,
 																		USBH_MAX_DATA_BUFFER);
+																		
+				lcdSetCursor(10, 40);   // x,y
+		    lcdPrintf("USB_PIPE_NUMBER %X \r\n",USB_PIPE_NUMBER) ; 
+							lcdSetCursor(10, 55);   // x,y
+		    lcdPrintf("device.address %d \r\n",hUsbHostFS.device.address) ; 
+							lcdSetCursor(10, 70);   // x,y
+		    lcdPrintf("device.speed %d \r\n",hUsbHostFS.device.speed) ; 
 
 			// continue connection attempt until successful
 			// продолжаем попытку подключения до успешного завершения
@@ -592,9 +610,8 @@ void HAL_GPIO_EXTI_Callback (uint16_t GPIO_Pin)
 	}
 }
 
-static void RTLSDR_InitApplication(void)
+static void Device_InitApplication(void)  // Инициализация  устройств на плате 
 {
-	
 	BSP_LED_On(LED1);
 	BSP_LED_On(LED2);
 	HAL_Delay(200);
@@ -615,37 +632,8 @@ static void RTLSDR_InitApplication(void)
 	lcdSetTextFont(&Font16);
 	lcdSetTextColor(COLOR_WHITE, COLOR_BLUE);
 	lcdFillRect(0,0,319,20,COLOR_BLUE);
-	lcdSetCursor(2, 5);   // xy	
+	lcdSetCursor(2, 5);   // x,y	
 	
-	
-	
-	
-	
-	
-	
-//  
-//  /* Initialize the LCD */
-//  BSP_LCD_Init();
-//  
-//  /* LCD Layer Initialization */
-//  BSP_LCD_LayerDefaultInit(0, LCD_FB_START_ADDRESS); 
-//  
-//  /* Select the LCD Layer */
-//  BSP_LCD_SelectLayer(0);
-//  BSP_LCD_SetTransparency(0, 0xFF);
-//  
-//  /* Other layer*/
-//  BSP_LCD_LayerDefaultInit(1, ((uint32_t)(LCD_FB_START_ADDRESS + (RK043FN48H_WIDTH * RK043FN48H_HEIGHT * 4)))); 
-//  BSP_LCD_SelectLayer(1);
-//  BSP_LCD_SetTransparency(1, 0x00);
-//  
-//  /* Draw a test circle and background to the layer 1 */
-//  BSP_LCD_Clear(LCD_COLOR_TRANSPARENT);
-//  BSP_LCD_SetTextColor(LCD_COLOR_WHITE);
-//  BSP_LCD_DrawCircle(BSP_LCD_GetXSize()/2, BSP_LCD_GetYSize()/2, 10);
-//  
-//  /* Return to layer 0 for putting the console */
-//  BSP_LCD_SelectLayer(0);
 //  
 //  /* Enable the display */
 //  BSP_LCD_DisplayOn();
@@ -904,6 +892,9 @@ void Test_TFT(void)
 		lcdPrintf(str4); 
 
 }
+
+
+
 
 
 

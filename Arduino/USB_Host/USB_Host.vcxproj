@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <Keyword>Linux</Keyword>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectName>USB_Host</ProjectName>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+    <ProjectGuid>{EC296765-56CC-4EAB-B0CB-A4AFF09CDB02}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <LinuxIncludePath>c:\visualmicro\ignore</LinuxIncludePath>
+    <wiringPiIncludePath>c:\visualmicro\pi-ignore</wiringPiIncludePath>
+    <TargetOSAndVersion>Arduino</TargetOSAndVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <IncludePath>$(ProjectDir)..\USB_Host;C:\Users\Alex\AppData\Local\arduino15\packages\STMicroelectronics\hardware\stm32\2.2.0\libraries\SrcWrapper\src;c:\\program files (x86)\\microsoft visual studio\\2019\\community\\common7\\ide\\extensions\\q2nnkohk.lzi\\Micro Platforms\\default;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\cores\\arduino\avr;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\cores\\arduino\stm32;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\cores\\arduino\stm32\LL;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\cores\\arduino\stm32\usb;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\cores\\arduino\stm32\OpenAMP;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\cores\\arduino\stm32\usb\hid;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\cores\\arduino\stm32\usb\cdc;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Drivers\STM32F4xx_HAL_Driver\Inc;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Drivers\STM32F4xx_HAL_Driver\Src;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\STM32F4xx;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Middlewares\ST\STM32_USB_Device_Library\Core\Inc;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Middlewares\ST\STM32_USB_Device_Library\Core\Src;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Middlewares\OpenAMP;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Middlewares\OpenAMP\open-amp\lib\include;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Middlewares\OpenAMP\libmetal\lib\include;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Middlewares\OpenAMP\virtual_driver;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\tools\\CMSIS\\5.7.0\CMSIS\Core\Include;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Drivers\CMSIS\Device\ST\STM32F4xx\Include;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\tools\\CMSIS\\5.7.0\CMSIS\DSP\Include;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\tools\\CMSIS\\5.7.0\CMSIS\DSP\PrivateInclude;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\cores\\arduino;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\variants\\STM32F4xx\\F407V(E-G)T_F417V(E-G)T;c:\users\alex\appdata\local\arduino15\packages\stmicroelectronics\tools\xpack-arm-none-eabi-gcc\10.3.1-2.3\arm-none-eabi\include\c++\10.3.1;c:\users\alex\appdata\local\arduino15\packages\stmicroelectronics\tools\xpack-arm-none-eabi-gcc\10.3.1-2.3\arm-none-eabi\include\c++\10.3.1\arm-none-eabi\thumb\v7e-m+fp\hard;c:\users\alex\appdata\local\arduino15\packages\stmicroelectronics\tools\xpack-arm-none-eabi-gcc\10.3.1-2.3\arm-none-eabi\include\c++\10.3.1\backward;c:\users\alex\appdata\local\arduino15\packages\stmicroelectronics\tools\xpack-arm-none-eabi-gcc\10.3.1-2.3\lib\gcc\arm-none-eabi\10.3.1\include;c:\users\alex\appdata\local\arduino15\packages\stmicroelectronics\tools\xpack-arm-none-eabi-gcc\10.3.1-2.3\lib\gcc\arm-none-eabi\10.3.1\include-fixed;c:\users\alex\appdata\local\arduino15\packages\stmicroelectronics\tools\xpack-arm-none-eabi-gcc\10.3.1-2.3\arm-none-eabi\include;C:\Users\Alex\AppData\Local\arduino15\packages\STMicroelectronics\hardware\stm32\2.2.0\libraries\SrcWrapper\src</IncludePath>
+    <RemoteCCompileToolExe>C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\10.3.1-2.3\bin\arm-none-eabi-g++</RemoteCCompileToolExe>
+    <RemoteCppCompileToolExe>C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\10.3.1-2.3\bin\arm-none-eabi-g++</RemoteCppCompileToolExe>
+    <ValidateArchitecture>false</ValidateArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectCapability Include="VisualMicro" />
+    <ProjectCapability Include="VisualMicroLinux" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="diskio.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="fatfs.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="ff.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="ff_gen_drv.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="stm32f4xx_hal_hcd.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_conf.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_conf_template.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_core.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_ctlreq.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_diskio.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_ioreq.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_msc.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_msc_bot.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_msc_scsi.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_pipes.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_platform.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usb_host.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="USB_Host.ino">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="diskio.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="fatfs.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="ff.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="ffconf.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="ff_gen_drv.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="integer.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="main.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="stm32f4xx_hal_hcd.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="stm32f4xx_ll_usb.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_conf.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_conf_template.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_core.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_ctlreq.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_def.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_diskio.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_ioreq.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_msc.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_msc_bot.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_msc_scsi.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_pipes.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usbh_platform.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="usb_host.h">
+      <FileType>CppCode</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClInclude Include="__vm\.USB_Host.vsarduino.h" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\USB_Host;C:\Users\Alex\AppData\Local\arduino15\packages\STMicroelectronics\hardware\stm32\2.2.0\libraries\SrcWrapper\src;c:\\program files (x86)\\microsoft visual studio\\2019\\community\\common7\\ide\\extensions\\q2nnkohk.lzi\\Micro Platforms\\default;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\cores\\arduino\avr;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\cores\\arduino\stm32;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\cores\\arduino\stm32\LL;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\cores\\arduino\stm32\usb;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\cores\\arduino\stm32\OpenAMP;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\cores\\arduino\stm32\usb\hid;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\cores\\arduino\stm32\usb\cdc;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Drivers\STM32F4xx_HAL_Driver\Inc;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Drivers\STM32F4xx_HAL_Driver\Src;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\STM32F4xx;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Middlewares\ST\STM32_USB_Device_Library\Core\Inc;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Middlewares\ST\STM32_USB_Device_Library\Core\Src;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Middlewares\OpenAMP;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Middlewares\OpenAMP\open-amp\lib\include;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Middlewares\OpenAMP\libmetal\lib\include;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Middlewares\OpenAMP\virtual_driver;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\tools\\CMSIS\\5.7.0\CMSIS\Core\Include;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Drivers\CMSIS\Device\ST\STM32F4xx\Include;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\system\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\tools\\CMSIS\\5.7.0\CMSIS\DSP\Include;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\tools\\CMSIS\\5.7.0\CMSIS\DSP\PrivateInclude;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\cores\\arduino;C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.2.0\\variants\\STM32F4xx\\F407V(E-G)T_F417V(E-G)T;c:\users\alex\appdata\local\arduino15\packages\stmicroelectronics\tools\xpack-arm-none-eabi-gcc\10.3.1-2.3\arm-none-eabi\include\c++\10.3.1;c:\users\alex\appdata\local\arduino15\packages\stmicroelectronics\tools\xpack-arm-none-eabi-gcc\10.3.1-2.3\arm-none-eabi\include\c++\10.3.1\arm-none-eabi\thumb\v7e-m+fp\hard;c:\users\alex\appdata\local\arduino15\packages\stmicroelectronics\tools\xpack-arm-none-eabi-gcc\10.3.1-2.3\arm-none-eabi\include\c++\10.3.1\backward;c:\users\alex\appdata\local\arduino15\packages\stmicroelectronics\tools\xpack-arm-none-eabi-gcc\10.3.1-2.3\lib\gcc\arm-none-eabi\10.3.1\include;c:\users\alex\appdata\local\arduino15\packages\stmicroelectronics\tools\xpack-arm-none-eabi-gcc\10.3.1-2.3\lib\gcc\arm-none-eabi\10.3.1\include-fixed;c:\users\alex\appdata\local\arduino15\packages\stmicroelectronics\tools\xpack-arm-none-eabi-gcc\10.3.1-2.3\arm-none-eabi\include;C:\Users\Alex\AppData\Local\arduino15\packages\STMicroelectronics\hardware\stm32\2.2.0\libraries\SrcWrapper\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <GccToolChain>C:\\Users\\Alex\\AppData\\Local\\arduino15\\packages\\STMicroelectronics\\tools\\xpack-arm-none-eabi-gcc\\10.3.1-2.3\bin\arm-none-eabi-g++</GccToolChain>
+      <CppLanguageStandard>gnu++1y</CppLanguageStandard>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CAdditionalWarning />
+      <CppAdditionalWarning />
+      <ForcedIncludeFiles>c:\program files (x86)\microsoft visual studio\2019\community\common7\ide\extensions\q2nnkohk.lzi\Micro Platforms\default\vm-intelli-pre.h;C:\Users\Alex\AppData\Local\Temp\VMBuilds\USB_Host\STMicroelectronics_GenF4\Release\.vmintelli\ff0a041da73d024f56639b988c97f95d\vm-intelli-gcc-defines.h;c:\program files (x86)\microsoft visual studio\2019\community\common7\ide\extensions\q2nnkohk.lzi\Micro Platforms\default\vm-intelli-post.h;$(ProjectDir)__vm\.USB_Host.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <UndefineAllPreprocessorDefinitions>true</UndefineAllPreprocessorDefinitions>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>_VMICRO_INTELLISENSE;USE_FULL_LL_DRIVER;STM32F4xx;ARDUINO=10809;ARDUINO_BLACK_F407VE;ARDUINO_ARCH_STM32;BOARD_NAME=BLACK_F407VE;VARIANT_H=variant_BLACK_F407VX.h;STM32F407xx;HAL_UART_MODULE_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

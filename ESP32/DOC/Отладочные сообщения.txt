@@ -1,0 +1,99 @@
+   ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x3ac
+load:0x403c9700,len:0x9b4
+load:0x403cc700,len:0x2908
+entry 0x403c98bc
+[   107][I][esp32-hal-psram.c:96] psramInit(): PSRAM enabled
+ESP32_RTL_SDR_24_01_16_08
+[  1123][I][ESP32_RTL_SDR_24_01_16_08.ino:186] host_lib_daemon_task(): [DAEMON] Installing USB Host Library
+[  1153][I][ESP32_RTL_SDR_24_01_16_08.ino:538] class_driver_task(): [MAIN] Registering Client
+rtlsdr_i2c_read_reg R82XX_CHECK_ADDR setting done
+Found Rafael Micro R820T tuner
+[R82XX] PLL not locked!
+Exact sample rate is: 2000000.052982 Hz
+[R82XX] PLL not locked!
+Sampling at 2000000 S/s.
+[R82XX] PLL not locked!
+Tuned to 1090000000 Hz.
+Tuner gain set to automatic.
+[  2199][I][ESP32_RTL_SDR_24_01_16_08.ino:393] client_event_cb(): [MAIN] [APP] Free memory: 8742359 bytes
+BULK: Transfer:Read type 229376
+BULK: Transfer:Read status 7, actual number of bytes transferred 0, databuffer size 229376, 0
+[  2209][I][ESP32_RTL_SDR_24_01_16_08.ino:398] client_event_cb(): [MAIN] [APP] Free memory: 8283483 bytes
+WARNING: sync read failed.
+E (4335) USBH: Device 1 gone
+E (11238) task_wdt: Task watchdog got triggered. The following tasks did not reset the watchdog in time:
+E (11238) task_wdt:  - loopTask (CPU 1)
+E (11238) task_wdt: Tasks currently running:
+E (11238) task_wdt: CPU 0: IDLE
+E (11238) task_wdt: CPU 1: IDLE
+E (11238) task_wdt: Print CPU 0 (current core) backtrace
+
+
+
+entry 0x403c98bc
+[   116][I][esp32-hal-psram.c:96] psramInit(): PSRAM enabled
+ESP32_RTL_SDR_24_01_16_12
+[  1132][I][ESP32_RTL_SDR_24_01_16_12.ino:521] host_lib_daemon_task(): [DAEMON] Installing USB Host Library
+[  1162][I][ESP32_RTL_SDR_24_01_16_12.ino:878] class_driver_task(): [CLASS] Registering Client
+WARNING: Failed to set sample rate.
+WARNING: Failed to set center freq.
+WARNING: Failed to set tuner gain.
+WARNING: Failed to reset buffers.
+[  1676][I][ESP32_RTL_SDR_24_01_16_12.ino:732] client_event_cb(): [EVENT] [APP] Free memory: 8744167 bytes
+[  1677][I][ESP32_RTL_SDR_24_01_16_12.ino:738] client_event_cb(): [EVENT] [APP] Free memory: 8744167 bytes
+WARNING: sync read failed.
+
+
+
+
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x28 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x3ac
+load:0x403c9700,len:0x9b4
+load:0x403cc700,len:0x2908
+entry 0x403c98bc
+[   120][I][esp32-hal-psram.c:96] psramInit(): PSRAM enabled
+ESP32_RTL_SDR_24_01_16_18
+[  1135][I][ESP32_RTL_SDR_24_01_16_18.ino:94] host_lib_daemon_task(): [DAEMON] Installing USB Host Library
+[  1166][I][ESP32_RTL_SDR_24_01_16_18.ino:433] class_driver_task(): [CLASS] Registering Client
+[  1581][I][librtlsdr.c:512] rtlsdr_write_reg(): [ADSB] rtlsdr_write_reg here 1
+[  1583][I][librtlsdr.c:512] rtlsdr_write_reg(): [ADSB] rtlsdr_write_reg here 1
+[  1585][I][librtlsdr.c:512] rtlsdr_write_reg(): [ADSB] rtlsdr_write_reg here 2
+[  1592][I][librtlsdr.c:512] rtlsdr_write_reg(): [ADSB] rtlsdr_write_reg here 2
+[  1599][I][librtlsdr.c:512] rtlsdr_write_reg(): [ADSB] rtlsdr_write_reg here 1
+[  1606][I][librtlsdr.c:512] rtlsdr_write_reg(): [ADSB] rtlsdr_write_reg here 1
+[  1819][I][librtlsdr.c:1390] rtlsdr_open(): [ADSB] rtl device number 105
+rtlsdr_i2c_read_reg R82XX_CHECK_ADDR setting done
+Found Rafael Micro R820T tuner
+[R82XX] PLL not locked!
+Exact sample rate is: 2000000.052982 Hz
+[R82XX] PLL not locked!
+Sampling at 2000000 S/s.
+[R82XX] PLL not locked!
+Tuned to 1090000000 Hz.
+Tuner gain set to automatic.
+[  2136][I][librtlsdr.c:512] rtlsdr_write_reg(): [ADSB] rtlsdr_write_reg here 2
+[  2138][I][librtlsdr.c:512] rtlsdr_write_reg(): [ADSB] rtlsdr_write_reg here 2
+[  2240][I][ESP32_RTL_SDR_24_01_16_18.ino:287] client_event_cb(): [EVENT] [APP] Free memory: 8742359 bytes
+[  2240][I][librtlsdr.c:1937] esp_libusb_bulk_transfer(): [ADSB] esp_libusb_bulk_transfer info 129 229376 0 2
+[  2248][I][librtlsdr.c:1942] esp_libusb_bulk_transfer(): [ADSB] esp_libusb_bulk_transfer usb_host_transfer_alloc 229376
+BULK: Transfer:Read type 229376
+BULK: Transfer:Read status 7, actual number of bytes transferred 0, databuffer size 229376, 0
+[  2270][I][librtlsdr.c:1964] esp_libusb_bulk_transfer(): [ADSB] esp_libusb_bulk_transfer failed
+[  2278][I][ESP32_RTL_SDR_24_01_16_18.ino:293] client_event_cb(): [EVENT] [APP] Free memory: 8283483 bytes
+WARNING: sync read failed.
+E (4461) USBH: Device 1 gone
+E (11307) task_wdt: Task watchdog got triggered. The following tasks did not reset the watchdog in time:
+E (11307) task_wdt:  - loopTask (CPU 1)
+E (11307) task_wdt: Tasks currently running:
+E (11307) task_wdt: CPU 0: IDLE
+E (11307) task_wdt: CPU 1: IDLE
+E (11307) task_wdt: Print CPU 0 (current core) backtrace

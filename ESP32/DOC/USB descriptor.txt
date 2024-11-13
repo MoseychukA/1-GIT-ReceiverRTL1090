@@ -1,0 +1,52 @@
+E (29690) USBH: Device 1 gone
+[ 29791][I][usbhhelp.hpp:63] _client_event_callback(): [] Device Gone handle: 3fcec634
+[   145][I][usbhhelp.hpp:79] usbh_setup(): [] usb_host_install: 0
+[   145][I][usbhhelp.hpp:90] usbh_setup(): [] usb_host_client_register: 0
+[  8595][I][usbhhelp.hpp:40] _client_event_callback(): [] New device address: 1
+[  8595][I][usbhhelp.hpp:49] _client_event_callback(): [] speed: 1 dev_addr 1 vMaxPacketSize0 64 bConfigurationValue 1
+[  8601][I][show_desc.hpp:44] show_dev_desc(): [] bLength: 18
+[  8607][I][show_desc.hpp:45] show_dev_desc(): [] bDescriptorType(device): 1
+[  8614][I][show_desc.hpp:46] show_dev_desc(): [] bcdUSB: 0x200
+[  8619][I][show_desc.hpp:47] show_dev_desc(): [] bDeviceClass: 0x00
+[  8625][I][show_desc.hpp:48] show_dev_desc(): [] bDeviceSubClass: 0x00
+[  8632][I][show_desc.hpp:49] show_dev_desc(): [] bDeviceProtocol: 0x00
+[  8638][I][show_desc.hpp:50] show_dev_desc(): [] bMaxPacketSize0: 64
+[  8644][I][show_desc.hpp:51] show_dev_desc(): [] idVendor: 0xbda
+[  8650][I][show_desc.hpp:52] show_dev_desc(): [] idProduct: 0x2838
+[  8656][I][show_desc.hpp:53] show_dev_desc(): [] bcdDevice: 0x100
+[  8662][I][show_desc.hpp:54] show_dev_desc(): [] iManufacturer: 1
+[  8668][I][show_desc.hpp:55] show_dev_desc(): [] iProduct: 2
+[  8673][I][show_desc.hpp:56] show_dev_desc(): [] iSerialNumber: 3
+[  8679][I][show_desc.hpp:57] show_dev_desc(): [] bNumConfigurations: 1
+[  8686][I][show_desc.hpp:64] show_config_desc(): [] bLength: 9
+[  8691][I][show_desc.hpp:65] show_config_desc(): [] bDescriptorType(config): 2
+[  8698][I][show_desc.hpp:66] show_config_desc(): [] wTotalLength: 34
+[  8704][I][show_desc.hpp:67] show_config_desc(): [] bNumInterfaces: 2
+[  8711][I][show_desc.hpp:68] show_config_desc(): [] bConfigurationValue: 1
+[  8717][I][show_desc.hpp:69] show_config_desc(): [] iConfiguration: 4
+[  8724][I][show_desc.hpp:74] show_config_desc(): [] bmAttributes(): 0x80
+[  8730][I][show_desc.hpp:75] show_config_desc(): [] bMaxPower: 250 = 500 mA
+[  8737][I][show_desc.hpp:82] show_interface_desc(): [] bLength: 9
+[  8743][I][show_desc.hpp:83] show_interface_desc(): [] bDescriptorType (interface): 4
+[  8750][I][show_desc.hpp:84] show_interface_desc(): [] bInterfaceNumber: 0
+[  8757][I][show_desc.hpp:85] show_interface_desc(): [] bAlternateSetting: 0
+[  8764][I][show_desc.hpp:86] show_interface_desc(): [] bNumEndpoints: 1
+[  8770][I][show_desc.hpp:87] show_interface_desc(): [] bInterfaceClass: 0xff
+[  8777][I][show_desc.hpp:88] show_interface_desc(): [] bInterfaceSubClass: 0xff
+[  8784][I][show_desc.hpp:89] show_interface_desc(): [] bInterfaceProtocol: 0xff
+[  8791][I][show_desc.hpp:90] show_interface_desc(): [] iInterface: 5
+[  8797][I][show_desc.hpp:100] show_endpoint_desc(): [] bLength: 7
+[  8803][I][show_desc.hpp:101] show_endpoint_desc(): [] bDescriptorType (endpoint): 5
+[  8811][I][show_desc.hpp:104] show_endpoint_desc(): [] bEndpointAddress(In): 0x81
+[  8818][I][show_desc.hpp:107] show_endpoint_desc(): [] bmAttributes(Bulk): 0x02
+[  8825][I][show_desc.hpp:108] show_endpoint_desc(): [] wMaxPacketSize: 64
+[  8832][I][show_desc.hpp:109] show_endpoint_desc(): [] bInterval: 1
+[  8838][I][show_desc.hpp:82] show_interface_desc(): [] bLength: 9
+[  8844][I][show_desc.hpp:83] show_interface_desc(): [] bDescriptorType (interface): 4
+[  8852][I][show_desc.hpp:84] show_interface_desc(): [] bInterfaceNumber: 1
+[  8858][I][show_desc.hpp:85] show_interface_desc(): [] bAlternateSetting: 0
+[  8865][I][show_desc.hpp:86] show_interface_desc(): [] bNumEndpoints: 0
+[  8871][I][show_desc.hpp:87] show_interface_desc(): [] bInterfaceClass: 0xff
+[  8878][I][show_desc.hpp:88] show_interface_desc(): [] bInterfaceSubClass: 0xff
+[  8885][I][show_desc.hpp:89] show_interface_desc(): [] bInterfaceProtocol: 0xff
+[  8893][I][show_desc.hpp:90] show_interface_desc(): [] iInterface: 5

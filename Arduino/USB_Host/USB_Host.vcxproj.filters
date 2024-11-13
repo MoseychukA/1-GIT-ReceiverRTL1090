@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="USB_Host.ino" />
+    <ClCompile Include="diskio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="diskio.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fatfs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fatfs.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ff.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ffconf.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ff_gen_drv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ff_gen_drv.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="integer.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stm32f4xx_hal_hcd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stm32f4xx_hal_hcd.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stm32f4xx_ll_usb.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_conf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_conf.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_conf_template.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_conf_template.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_core.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_core.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_ctlreq.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_ctlreq.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_def.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_diskio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_diskio.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_ioreq.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_ioreq.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_msc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_msc.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_msc_bot.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_msc_bot.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_msc_scsi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_msc_scsi.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_pipes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_pipes.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_platform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_platform.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usb_host.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usb_host.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__vm\.USB_Host.vsarduino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
