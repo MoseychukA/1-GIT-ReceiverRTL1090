@@ -1,0 +1,36 @@
+    libusb_device ** list;
+    libusb_device * found = NULL;
+    ssize_t count;  
+	ssize_t i = 0; 
+	int err = 0; 
+	libusb_context * ctx; 
+	libusb_init(&ctx); 
+    if ((count = libusb_get_device_list(ctx, &list)) < 0) 
+	{ 
+	   printf("Невозможная ошибка, но, тем не менее...\n");       return -1;     
+	} 
+    for (i = 0; i < count; i++) 
+	{   
+      libusb_device * device = list[i];
+	  struct libusb_device_descriptor desc;  
+	  libusb_get_device_descriptor(device, &desc);
+	  if (desc.idVendor == DEV_VID) 
+	  {  
+  	    found = device; break;      
+	  } 
+    }  
+	if (found) 
+	{  
+	   err = libusb_open(found, &handle);      
+	   if (err) 
+	   { 
+ 	     printf("Невозможно открыть устройство\n");         return -1;      
+	   }    
+	} 
+	else 
+	{   
+       printf("Устройство не найдено\n");   
+	   return -1;    
+	} 
+	
+	//...     libusb_free_device_list(list, 1); 

@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35425.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ESP32_RTLSDR_24_11_27_22", "ESP32_RTLSDR_24_11_27_22.vcxproj", "{23815E35-7089-4F42-8AB0-C928BE3C772E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23815E35-7089-4F42-8AB0-C928BE3C772E}.Debug|ARM.ActiveCfg = Debug|ARM
+		{23815E35-7089-4F42-8AB0-C928BE3C772E}.Debug|ARM.Build.0 = Debug|ARM
+		{23815E35-7089-4F42-8AB0-C928BE3C772E}.Debug|ARM.Deploy.0 = Debug|ARM
+		{23815E35-7089-4F42-8AB0-C928BE3C772E}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{23815E35-7089-4F42-8AB0-C928BE3C772E}.Debug|ARM64.Build.0 = Debug|ARM64
+		{23815E35-7089-4F42-8AB0-C928BE3C772E}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{23815E35-7089-4F42-8AB0-C928BE3C772E}.Release|ARM.ActiveCfg = Release|ARM
+		{23815E35-7089-4F42-8AB0-C928BE3C772E}.Release|ARM.Build.0 = Release|ARM
+		{23815E35-7089-4F42-8AB0-C928BE3C772E}.Release|ARM.Deploy.0 = Release|ARM
+		{23815E35-7089-4F42-8AB0-C928BE3C772E}.Release|ARM64.ActiveCfg = Release|ARM64
+		{23815E35-7089-4F42-8AB0-C928BE3C772E}.Release|ARM64.Build.0 = Release|ARM64
+		{23815E35-7089-4F42-8AB0-C928BE3C772E}.Release|ARM64.Deploy.0 = Release|ARM64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A6B4492-A4F6-4368-BF29-971975DBDB05}
+	EndGlobalSection
+EndGlobal

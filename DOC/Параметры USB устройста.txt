@@ -1,0 +1,138 @@
+
+// Свисток RTLSDR
+[   108][I][esp32-hal-psram.c:96] psramInit(): PSRAM enabled
+[   144][I][usbhhelp.hpp:79] usbh_setup(): [] usb_host_install: 0
+[   145][I][usbhhelp.hpp:90] usbh_setup(): [] usb_host_client_register: 0
+[   553][I][usbhhelp.hpp:40] _client_event_callback(): [] New device address: 1
+[   554][I][usbhhelp.hpp:49] _client_event_callback(): [] speed: 1 dev_addr 1 vMaxPacketSize0 64 bConfigurationValue 1
+[   560][I][show_desc.hpp:44] show_dev_desc(): [] bLength: 18
+[   565][I][show_desc.hpp:45] show_dev_desc(): [] bDescriptorType(device): 1
+[   572][I][show_desc.hpp:46] show_dev_desc(): [] bcdUSB: 0x200
+[   578][I][show_desc.hpp:47] show_dev_desc(): [] bDeviceClass: 0x00
+[   584][I][show_desc.hpp:48] show_dev_desc(): [] bDeviceSubClass: 0x00
+[   590][I][show_desc.hpp:49] show_dev_desc(): [] bDeviceProtocol: 0x00
+[   597][I][show_desc.hpp:50] show_dev_desc(): [] bMaxPacketSize0: 64
+[   603][I][show_desc.hpp:51] show_dev_desc(): [] idVendor: 0xbda
+[   609][I][show_desc.hpp:52] show_dev_desc(): [] idProduct: 0x2838
+[   614][I][show_desc.hpp:53] show_dev_desc(): [] bcdDevice: 0x100
+[   620][I][show_desc.hpp:54] show_dev_desc(): [] iManufacturer: 1
+[   626][I][show_desc.hpp:55] show_dev_desc(): [] iProduct: 2
+[   632][I][show_desc.hpp:56] show_dev_desc(): [] iSerialNumber: 3
+[   638][I][show_desc.hpp:57] show_dev_desc(): [] bNumConfigurations: 1
+[   644][I][show_desc.hpp:64] show_config_desc(): [] bLength: 9
+[   650][I][show_desc.hpp:65] show_config_desc(): [] bDescriptorType(config): 2
+[   657][I][show_desc.hpp:66] show_config_desc(): [] wTotalLength: 34
+[   663][I][show_desc.hpp:67] show_config_desc(): [] bNumInterfaces: 2
+[   669][I][show_desc.hpp:68] show_config_desc(): [] bConfigurationValue: 1
+[   676][I][show_desc.hpp:69] show_config_desc(): [] iConfiguration: 4
+[   682][I][show_desc.hpp:74] show_config_desc(): [] bmAttributes(): 0x80
+[   689][I][show_desc.hpp:75] show_config_desc(): [] bMaxPower: 250 = 500 mA
+[   695][I][show_desc.hpp:82] show_interface_desc(): [] bLength: 9
+[   701][I][show_desc.hpp:83] show_interface_desc(): [] bDescriptorType (interface): 4
+[   709][I][show_desc.hpp:84] show_interface_desc(): [] bInterfaceNumber: 0
+[   716][I][show_desc.hpp:85] show_interface_desc(): [] bAlternateSetting: 0
+[   722][I][show_desc.hpp:86] show_interface_desc(): [] bNumEndpoints: 1
+[   729][I][show_desc.hpp:87] show_interface_desc(): [] bInterfaceClass: 0xff
+[   736][I][show_desc.hpp:88] show_interface_desc(): [] bInterfaceSubClass: 0xff
+[   743][I][show_desc.hpp:89] show_interface_desc(): [] bInterfaceProtocol: 0xff
+[   750][I][show_desc.hpp:90] show_interface_desc(): [] iInterface: 5
+[   756][I][show_desc.hpp:100] show_endpoint_desc(): [] bLength: 7
+[   762][I][show_desc.hpp:101] show_endpoint_desc(): [] bDescriptorType (endpoint): 5
+[   769][I][show_desc.hpp:104] show_endpoint_desc(): [] bEndpointAddress(In): 0x81
+[   777][I][show_desc.hpp:107] show_endpoint_desc(): [] bmAttributes(Bulk): 0x02
+[   784][I][show_desc.hpp:108] show_endpoint_desc(): [] wMaxPacketSize: 64
+[   790][I][show_desc.hpp:109] show_endpoint_desc(): [] bInterval: 1
+[   797][I][show_desc.hpp:82] show_interface_desc(): [] bLength: 9
+[   802][I][show_desc.hpp:83] show_interface_desc(): [] bDescriptorType (interface): 4
+[   810][I][show_desc.hpp:84] show_interface_desc(): [] bInterfaceNumber: 1
+[   817][I][show_desc.hpp:85] show_interface_desc(): [] bAlternateSetting: 0
+[   824][I][show_desc.hpp:86] show_interface_desc(): [] bNumEndpoints: 0
+[   830][I][show_desc.hpp:87] show_interface_desc(): [] bInterfaceClass: 0xff
+[   837][I][show_desc.hpp:88] show_interface_desc(): [] bInterfaceSubClass: 0xff
+[   844][I][show_desc.hpp:89] show_interface_desc(): [] bInterfaceProtocol: 0xff
+[   851][I][show_desc.hpp:90] show_interface_desc(): [] iInterface: 5
+
+
+
+
+//Клавиатура
+entry 0x403c98bc
+[   108][I][esp32-hal-psram.c:96] psramInit(): PSRAM enabled
+[   144][I][usbhhelp.hpp:79] usbh_setup(): [] usb_host_install: 0
+[   145][I][usbhhelp.hpp:90] usbh_setup(): [] usb_host_client_register: 0
+[   539][I][usbhhelp.hpp:40] _client_event_callback(): [] New device address: 1
+[   540][I][usbhhelp.hpp:49] _client_event_callback(): [] speed: 1 dev_addr 1 vMaxPacketSize0 8 bConfigurationValue 1
+[   546][I][show_desc.hpp:44] show_dev_desc(): [] bLength: 18
+[   551][I][show_desc.hpp:45] show_dev_desc(): [] bDescriptorType(device): 1
+[   558][I][show_desc.hpp:46] show_dev_desc(): [] bcdUSB: 0x110
+[   564][I][show_desc.hpp:47] show_dev_desc(): [] bDeviceClass: 0x00
+[   570][I][show_desc.hpp:48] show_dev_desc(): [] bDeviceSubClass: 0x00
+[   576][I][show_desc.hpp:49] show_dev_desc(): [] bDeviceProtocol: 0x00
+[   582][I][show_desc.hpp:50] show_dev_desc(): [] bMaxPacketSize0: 8
+[   589][I][show_desc.hpp:51] show_dev_desc(): [] idVendor: 0x248a
+[   594][I][show_desc.hpp:52] show_dev_desc(): [] idProduct: 0xda
+[   600][I][show_desc.hpp:53] show_dev_desc(): [] bcdDevice: 0x100
+[   606][I][show_desc.hpp:54] show_dev_desc(): [] iManufacturer: 1
+[   612][I][show_desc.hpp:55] show_dev_desc(): [] iProduct: 2
+[   618][I][show_desc.hpp:56] show_dev_desc(): [] iSerialNumber: 0
+[   623][I][show_desc.hpp:57] show_dev_desc(): [] bNumConfigurations: 1
+[   630][I][show_desc.hpp:64] show_config_desc(): [] bLength: 9
+[   635][I][show_desc.hpp:65] show_config_desc(): [] bDescriptorType(config): 2
+[   642][I][show_desc.hpp:66] show_config_desc(): [] wTotalLength: 59
+[   649][I][show_desc.hpp:67] show_config_desc(): [] bNumInterfaces: 2
+[   655][I][show_desc.hpp:68] show_config_desc(): [] bConfigurationValue: 1
+[   662][I][show_desc.hpp:69] show_config_desc(): [] iConfiguration: 0
+[   668][I][show_desc.hpp:74] show_config_desc(): [] bmAttributes(, Remote Wakeup): 0xa0
+[   676][I][show_desc.hpp:75] show_config_desc(): [] bMaxPower: 25 = 50 mA
+[   682][I][show_desc.hpp:82] show_interface_desc(): [] bLength: 9
+[   688][I][show_desc.hpp:83] show_interface_desc(): [] bDescriptorType (interface): 4
+[   696][I][show_desc.hpp:84] show_interface_desc(): [] bInterfaceNumber: 0
+[   702][I][show_desc.hpp:85] show_interface_desc(): [] bAlternateSetting: 0
+[   709][I][show_desc.hpp:86] show_interface_desc(): [] bNumEndpoints: 1
+[   716][I][show_desc.hpp:87] show_interface_desc(): [] bInterfaceClass: 0x03
+[   722][I][show_desc.hpp:88] show_interface_desc(): [] bInterfaceSubClass: 0x01
+[   730][I][show_desc.hpp:89] show_interface_desc(): [] bInterfaceProtocol: 0x02
+[   737][I][show_desc.hpp:90] show_interface_desc(): [] iInterface: 0
+[   743][I][show_desc.hpp:115] show_hid_desc(): [] bLength: 9
+[   748][I][show_desc.hpp:116] show_hid_desc(): [] bDescriptorType (HID): 33
+[   755][I][show_desc.hpp:117] show_hid_desc(): [] bcdHID: 0x0111
+[   761][I][show_desc.hpp:118] show_hid_desc(): [] bCountryCode: 33
+[   767][I][show_desc.hpp:119] show_hid_desc(): [] bNumDescriptor: 1
+[   773][I][show_desc.hpp:120] show_hid_desc(): [] bDescriptorType: 34
+[   779][I][show_desc.hpp:121] show_hid_desc(): [] wDescriptorLength: 142
+[   786][I][show_desc.hpp:100] show_endpoint_desc(): [] bLength: 7
+[   792][I][show_desc.hpp:101] show_endpoint_desc(): [] bDescriptorType (endpoint): 5
+[   799][I][show_desc.hpp:104] show_endpoint_desc(): [] bEndpointAddress(In): 0x82
+[   806][I][show_desc.hpp:107] show_endpoint_desc(): [] bmAttributes(Interrupt): 0x03
+[   814][I][show_desc.hpp:108] show_endpoint_desc(): [] wMaxPacketSize: 8
+[   821][I][show_desc.hpp:109] show_endpoint_desc(): [] bInterval: 4
+[   827][I][show_desc.hpp:82] show_interface_desc(): [] bLength: 9
+[   833][I][show_desc.hpp:83] show_interface_desc(): [] bDescriptorType (interface): 4
+[   840][I][show_desc.hpp:84] show_interface_desc(): [] bInterfaceNumber: 1
+[   847][I][show_desc.hpp:85] show_interface_desc(): [] bAlternateSetting: 0
+[   854][I][show_desc.hpp:86] show_interface_desc(): [] bNumEndpoints: 1
+[   860][I][show_desc.hpp:87] show_interface_desc(): [] bInterfaceClass: 0x03
+[   867][I][show_desc.hpp:88] show_interface_desc(): [] bInterfaceSubClass: 0x01
+[   874][I][show_desc.hpp:89] show_interface_desc(): [] bInterfaceProtocol: 0x01
+[   881][I][show_desc.hpp:90] show_interface_desc(): [] iInterface: 0
+[   887][I][ESP32_RTLSDR_KB_24_11_28_00.ino:70] check_interface_desc_boot_keyboard(): [] Claiming a boot keyboard!
+[   898][I][show_desc.hpp:115] show_hid_desc(): [] bLength: 9
+[   903][I][show_desc.hpp:116] show_hid_desc(): [] bDescriptorType (HID): 33
+[   910][I][show_desc.hpp:117] show_hid_desc(): [] bcdHID: 0x0111
+[   915][I][show_desc.hpp:118] show_hid_desc(): [] bCountryCode: 33
+[   921][I][show_desc.hpp:119] show_hid_desc(): [] bNumDescriptor: 1
+[   927][I][show_desc.hpp:120] show_hid_desc(): [] bDescriptorType: 34
+[   934][I][show_desc.hpp:121] show_hid_desc(): [] wDescriptorLength: 59
+[   940][I][show_desc.hpp:100] show_endpoint_desc(): [] bLength: 7
+[   946][I][show_desc.hpp:101] show_endpoint_desc(): [] bDescriptorType (endpoint): 5
+[   954][I][show_desc.hpp:104] show_endpoint_desc(): [] bEndpointAddress(In): 0x81
+[   961][I][show_desc.hpp:107] show_endpoint_desc(): [] bmAttributes(Interrupt): 0x03
+[   968][I][show_desc.hpp:108] show_endpoint_desc(): [] wMaxPacketSize: 8
+[   975][I][show_desc.hpp:109] show_endpoint_desc(): [] bInterval: 10
+[   981][I][ESP32_RTLSDR_KB_24_11_28_00.ino:100] prepare_endpoint(): [] USB boot keyboard ready
+transfer->num_bytes 8
+transfer->device_handle 1031801460
+transfer->bEndpointAddress 81
+transfer->callback 1107303276
+transfer->context 0
+transfer->timeout_ms 10

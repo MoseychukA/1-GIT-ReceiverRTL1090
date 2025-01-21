@@ -1,0 +1,33 @@
+// Get the devHandle for mass storage device.
+            // Detach kernel driver
+            // claim the interface 
+
+            actual = 64;
+            transferred = 0;
+            t_data = (char *) malloc(actual);
+            memset(t_data, 'X', actual);
+            retVal = libusb_bulk_transfer(devHandle, 0x02, t_data, actual, &transferred, 3000);
+            // This returns success.
+            if( retVal < 0)
+            {
+                printf("\nBulk transfer to this device failed\n");
+                dump_error(retVal);
+            }
+            if(transferred == actual)
+            {
+                printf("Bulk transfer success\n");
+                printf("Data written : %s\n", t_data);
+            }
+
+            retVal = libusb_bulk_transfer(devHandle, 0x81, t_data, actual, &transferred, 1000);
+            // This call returns TIMEOUT error.
+            if( retVal < 0)
+            {
+                printf("Bulk read failed\n");
+                dump_error(retVal);
+            }
+            if(retVal >= 0 && transferred == actual)
+            {
+                printf("Bulk read success\n");
+                printf("Data read : %s\n", t_data);
+            }

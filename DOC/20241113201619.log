@@ -1,0 +1,87 @@
+Terminal log file
+Date: 13.11.2024 - 20:16:41
+-----------------------------------------------
+E (15) s½î
+FlyRF-ESP32-S3 FW.REV: 1.3 DEV.ID: 3b94fcc0
+FlyRf_S_24_11_13_N01
+
+Reset reason: 0
+POWERON_RESET
+Free heap size: 253340
+Vbat power on reset
+
+EEPROM version: 96
+SX127x RFIC is detected.
+BMP180 barometric pressure sensor is detected.
+Temperature = 31.90 *C
+Pressure = 100157 Pa
+Altitude = 97.95 meters
+
+Flash memory ID: C84018
+Hostname: FlyRF-94fcc0
+Setting soft-AP configuration ... Ready
+Setting soft-AP ... Ready
+IP address: 192.168.1.1
+UDP server has started at port: 12389
+HTTP server has started at port: 80
+
+Power-on Self Test
+
+Built-in components:
+RADIO    : PASS
+GNSS     : PASS
+DISPLAY  : FAIL
+BARO     : PASS
+
+Power-on Self Test is complete.
+
+Data output device(s):
+NMEA   - Bluetooth
+D1090  - UART
+
+PSRAM initialized
+PSRAM Size available (bytes): 7727263
+E (15) s¼î20:17:16.563> 
+FlyRF-ESP32-S3 FW.REV: 1.3 DEV.ID: 3b94fcc020:17:16.563> 
+FlyRf_S_24_11_13_N0120:17:16.563> 
+20:17:16.563> 
+Reset reason: 020:17:16.563> 
+POWERON_RESET20:17:16.563> 
+Free heap size: 25334020:17:16.563> 
+Vbat power on reset20:17:16.563> 
+20:17:16.563> 
+EEPROM version: 9620:17:16.768> 
+SX127x RFIC is detected.20:17:16.768> 
+BMP180 barometric pressure sensor is detected.20:17:16.768> 
+Temperature = 32.00 *C20:17:16.768> 
+Pressure = 100158 Pa20:17:16.768> 
+Altitude = 97.45 meters20:17:16.941> 
+20:17:16.941> 
+Flash memory ID: C8401820:17:18.747> 
+Hostname: FlyRF-94fcc020:17:23.186> 
+Setting soft-AP configuration ... Ready20:17:23.249> 
+Setting soft-AP ... Ready20:17:23.249> 
+IP address: 192.168.1.120:17:23.249> 
+UDP server has started at port: 1238920:17:23.249> 
+HTTP server has started at port: 8020:17:23.500> 
+20:17:25.501> 
+Power-on Self Test20:17:25.501> 
+20:17:25.501> 
+Built-in components:20:17:25.501> 
+RADIO    : PASS20:17:25.501> 
+GNSS     : PASS20:17:25.501> 
+DISPLAY  : FAIL20:17:25.501> 
+BARO     : PASS20:17:25.501> 
+20:17:25.501> 
+Power-on Self Test is complete.20:17:25.501> 
+20:17:25.501> 
+Data output device(s):20:17:25.501> 
+NMEA   - Bluetooth20:17:25.501> 
+D1090  - UART20:17:25.501> 
+20:17:25.501> 
+PSRAM initialized20:17:25.501> 
+PSRAM Size available (bytes): 772726320:17:25.501> 
+
+-----------------------------------------------
+Date: 13.11.2024 - 20:27:03
+End log file
